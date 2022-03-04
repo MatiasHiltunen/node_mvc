@@ -45,5 +45,5 @@ const postCreateNewNote = async(req, res, next) => {
 
 export default {
     getCreateNewNote,
-    postCreateNewNote
+    postCreateNewNote,
 }

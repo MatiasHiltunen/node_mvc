@@ -12,6 +12,8 @@ router.post("/paste", [PasteController.postCreateNewPaste, catchError]);
 router.get("/delete/:id", [PasteController.deletePaste, catchError]);
 
 router.get("/note", NoteController.getCreateNewNote)
-router.post("/note", NoteController.postCreateNewNote)
+router.post("/note", [NoteController.postCreateNewNote, catchError])
+
+// router.get("/delete_note/:id", [NoteController.deleteNote, catchError])
 
 export default router;
